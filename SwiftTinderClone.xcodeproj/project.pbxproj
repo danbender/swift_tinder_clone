@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		371301AA1C31CF9B00A2FA87 /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371301A91C31CF9B00A2FA87 /* SwipeView.swift */; };
 		3798FD461C31C28C00EA6266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3798FD451C31C28C00EA6266 /* AppDelegate.swift */; };
 		3798FD491C31C28C00EA6266 /* SwiftTinderClone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3798FD471C31C28C00EA6266 /* SwiftTinderClone.xcdatamodeld */; };
 		3798FD4B1C31C28C00EA6266 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3798FD4A1C31C28C00EA6266 /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		371301A91C31CF9B00A2FA87 /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
 		3798FD401C31C28C00EA6266 /* SwiftTinderClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTinderClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3798FD441C31C28C00EA6266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3798FD451C31C28C00EA6266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				3798FD691C31C30000EA6266 /* CardView.swift */,
+				371301A91C31CF9B00A2FA87 /* SwipeView.swift */,
 			);
 			name = Views;
 			path = ..;
@@ -230,6 +233,7 @@
 				3798FD4B1C31C28C00EA6266 /* ViewController.swift in Sources */,
 				3798FD461C31C28C00EA6266 /* AppDelegate.swift in Sources */,
 				3798FD6A1C31C30000EA6266 /* CardView.swift in Sources */,
+				371301AA1C31CF9B00A2FA87 /* SwipeView.swift in Sources */,
 				3798FD491C31C28C00EA6266 /* SwiftTinderClone.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +428,7 @@
 				3798FD641C31C28C00EA6266 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3798FD651C31C28C00EA6266 /* Build configuration list for PBXNativeTarget "SwiftTinderCloneTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +437,7 @@
 				3798FD671C31C28C00EA6266 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
