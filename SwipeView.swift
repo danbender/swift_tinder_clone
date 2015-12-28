@@ -14,8 +14,8 @@ class SwipeView: UIView {
         initialize()
     }
     
-    override init() {
-        super.init()
+    convenience init() {
+        self.init(frame:CGRectZero)
         initialize()
     }
     
