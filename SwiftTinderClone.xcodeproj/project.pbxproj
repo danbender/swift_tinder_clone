@@ -16,6 +16,7 @@
 		3798FD531C31C28C00EA6266 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3798FD511C31C28C00EA6266 /* LaunchScreen.xib */; };
 		3798FD5F1C31C28C00EA6266 /* SwiftTinderCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3798FD5E1C31C28C00EA6266 /* SwiftTinderCloneTests.swift */; };
 		3798FD6A1C31C30000EA6266 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3798FD691C31C30000EA6266 /* CardView.swift */; };
+		37ED9F091C3E025300A6F3E5 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED9F081C3E025300A6F3E5 /* CardsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		3798FD5D1C31C28C00EA6266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3798FD5E1C31C28C00EA6266 /* SwiftTinderCloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTinderCloneTests.swift; sourceTree = "<group>"; };
 		3798FD691C31C30000EA6266 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		37ED9F081C3E025300A6F3E5 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +87,7 @@
 			children = (
 				3798FD451C31C28C00EA6266 /* AppDelegate.swift */,
 				3798FD681C31C2BE00EA6266 /* Views */,
-				3798FD4A1C31C28C00EA6266 /* ViewController.swift */,
+				379F43001C3E00B500823E62 /* ViewControllers */,
 				3798FD4C1C31C28C00EA6266 /* Main.storyboard */,
 				3798FD4F1C31C28C00EA6266 /* Images.xcassets */,
 				3798FD511C31C28C00EA6266 /* LaunchScreen.xib */,
@@ -128,6 +130,15 @@
 			);
 			name = Views;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		379F43001C3E00B500823E62 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				37ED9F081C3E025300A6F3E5 /* CardsViewController.swift */,
+				3798FD4A1C31C28C00EA6266 /* ViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +243,7 @@
 			files = (
 				3798FD4B1C31C28C00EA6266 /* ViewController.swift in Sources */,
 				3798FD461C31C28C00EA6266 /* AppDelegate.swift in Sources */,
+				37ED9F091C3E025300A6F3E5 /* CardsViewController.swift in Sources */,
 				3798FD6A1C31C30000EA6266 /* CardView.swift in Sources */,
 				371301AA1C31CF9B00A2FA87 /* SwipeView.swift in Sources */,
 				3798FD491C31C28C00EA6266 /* SwiftTinderClone.xcdatamodeld in Sources */,
