@@ -2,6 +2,12 @@ import Foundation
 import UIKit
 
 class SwipeView: UIView {
+    enum Direction {
+        case None
+        case Left
+        case Right
+    }
+    
     private let card: CardView = CardView()
     
     private var originalPoint: CGPoint?
@@ -49,6 +55,19 @@ class SwipeView: UIView {
             println("Default trigged for GestureRecognizer")
             break
         }
+    }
+    
+    func swipe(s: Direction) {
+        if s == .None {
+            return
+        }
+        var parentWidth = superview!.frame.size.width
+        if s == .Left {
+            parentWidth *= -1
+        }
+        UIView.animateWithDuration(0.2, animations: { () -> Void in
+            self.center.x = self.frame.origin.x + parentWidth
+        })
     }
     
     private func resetViewPositionAndTransformations() {
