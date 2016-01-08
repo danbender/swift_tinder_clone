@@ -40,7 +40,7 @@ class SwipeView: UIView {
         case UIGestureRecognizerState.Changed:
             let rotationPercent = min(distance.x/(self.superview!.frame.width/2), 1)
             let rotationAngle = (CGFloat(2*M_PI/16)*rotationPercent)
-            transform = CGAffineTransformRotate(transform, rotationAngle)
+            transform = CGAffineTransformMakeRotation(rotationAngle)
             
             center = CGPointMake(originalPoint!.x + distance.x, originalPoint!.y + distance.y)
         case UIGestureRecognizerState.Ended:
