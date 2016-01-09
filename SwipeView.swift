@@ -8,6 +8,8 @@ class SwipeView: UIView {
         case Right
     }
     
+    weak var delegate: SwipeViewDelegate?
+    
     private let card: CardView = CardView()
     
     private var originalPoint: CGPoint?
@@ -80,4 +82,17 @@ class SwipeView: UIView {
             self.transform = CGAffineTransformMakeRotation(0)
         })
     }
+    
 }
+
+
+
+protocol SwipeViewDelegate: class {
+    func swipedLeft()
+    func swipedRight()
+}
+
+
+
+
+
