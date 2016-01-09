@@ -55,7 +55,6 @@ class SwipeView: UIView {
             else {
                 swipe(distance.x > 0 ? .Right : .Left)
             }
-
         default:
             println("Default trigged for GestureRecognizer")
             break
