@@ -12,8 +12,8 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
     
     @IBOutlet weak var cardStackView: UIView!
     
-    var backCard: SwipeView?
-    var frontCard: SwipeView?
+    var backCard: Card?
+    var frontCard: Card?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,13 +22,11 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
         
         cardStackView.backgroundColor = UIColor.clearColor()
         
-        backCard = SwipeView(frame: createCardFrame(backCardTopMargin))
-        backCard?.delegate = self
-        cardStackView.addSubview(backCard!)
+        backCard = createCard(backCardTopMargin)
+        cardStackView.addSubview(backCard!.swipeView)
         
-        frontCard = SwipeView(frame: createCardFrame(frontCardTopMargin))
-        frontCard!.delegate = self
-        cardStackView.addSubview(frontCard!)
+        frontCard = createCard(frontCardTopMargin)
+        cardStackView.addSubview(frontCard!.swipeView)
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,14 +52,14 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
     func swipedLeft() {
         println("left")
         if let frontCard = frontCard {
-            frontCard.removeFromSuperview()
+            frontCard.swipeView.removeFromSuperview()
         }
     }
     
     func swipedRight() {
         println("right")
         if let frontCard = frontCard {
-            frontCard.removeFromSuperview()
+            frontCard.swipeView.removeFromSuperview()
         }
     }
 }
