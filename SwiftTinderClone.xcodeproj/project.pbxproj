@@ -21,6 +21,7 @@
 		372ED4521C4283EF0065BFB6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372ED4511C4283EF0065BFB6 /* SystemConfiguration.framework */; };
 		372ED4541C4283F70065BFB6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 372ED4531C4283F70065BFB6 /* libz.dylib */; };
 		372ED4561C4283FF0065BFB6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 372ED4551C4283FF0065BFB6 /* libsqlite3.dylib */; };
+		376313901C43778800A47D5E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3763138F1C43778800A47D5E /* LoginViewController.swift */; };
 		3798FD461C31C28C00EA6266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3798FD451C31C28C00EA6266 /* AppDelegate.swift */; };
 		3798FD491C31C28C00EA6266 /* SwiftTinderClone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3798FD471C31C28C00EA6266 /* SwiftTinderClone.xcdatamodeld */; };
 		3798FD4B1C31C28C00EA6266 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3798FD4A1C31C28C00EA6266 /* ViewController.swift */; };
@@ -60,6 +61,7 @@
 		372ED4531C4283F70065BFB6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		372ED4551C4283FF0065BFB6 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		372ED4571C4287A90065BFB6 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		3763138F1C43778800A47D5E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3798FD401C31C28C00EA6266 /* SwiftTinderClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTinderClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3798FD441C31C28C00EA6266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3798FD451C31C28C00EA6266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				37ED9F081C3E025300A6F3E5 /* CardsViewController.swift */,
+				3763138F1C43778800A47D5E /* LoginViewController.swift */,
 				3798FD4A1C31C28C00EA6266 /* ViewController.swift */,
 			);
 			name = ViewControllers;
@@ -372,6 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				376313901C43778800A47D5E /* LoginViewController.swift in Sources */,
 				3798FD4B1C31C28C00EA6266 /* ViewController.swift in Sources */,
 				3798FD461C31C28C00EA6266 /* AppDelegate.swift in Sources */,
 				37ED9F091C3E025300A6F3E5 /* CardsViewController.swift in Sources */,
