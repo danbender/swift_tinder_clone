@@ -24,6 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        testObject["foo"] = "bar"
 //        testObject.save()
         
+        PFFacebookUtils.initializeFacebook()
+        
         return true
     }
 
