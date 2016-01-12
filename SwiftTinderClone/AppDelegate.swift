@@ -19,12 +19,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         Parse.setApplicationId("WORzuH3JvS9srjc7Q0ftKeC3g21m619a0tpJ20vM", clientKey: "OF15REzIfXh2kmpI4k0RJFdtSg1clPlH7Jcjyz0j")
-
 //        let testObject = PFObject(className: "TestObject")
 //        testObject["foo"] = "bar"
 //        testObject.save()
         
         PFFacebookUtils.initializeFacebook()
+        
+        var storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        var initialViewController:UIViewController
+        
+        if PFUser.currentUser() != nil {
+            initialViewController = storyboard.instantiateViewControllerWithIdentifier("CardsNavController") as! UIViewController
+        }
+        else {
+            initialViewController = storyboard.instantiateViewControllerWithIdentifier("LoginViewController") as! UIViewController
+        }
+        
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
         
         return true
     }

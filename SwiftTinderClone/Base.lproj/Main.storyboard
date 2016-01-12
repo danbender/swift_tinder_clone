@@ -45,7 +45,7 @@
         <!--Login View Controller-->
         <scene sceneID="ncy-EY-y7N">
             <objects>
-                <viewController id="hXa-Pi-24q" customClass="LoginViewController" customModule="SwiftTinderClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="hXa-Pi-24q" customClass="LoginViewController" customModule="SwiftTinderClone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zVo-Ba-cTP"/>
                         <viewControllerLayoutGuide type="bottom" id="lNp-cL-ik7"/>
