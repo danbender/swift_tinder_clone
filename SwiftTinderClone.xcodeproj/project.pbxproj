@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		370F25FE1C46138B000B76DA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370F25FD1C46138B000B76DA /* User.swift */; };
 		371301AA1C31CF9B00A2FA87 /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371301A91C31CF9B00A2FA87 /* SwipeView.swift */; };
 		372ED43F1C4283710065BFB6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372ED43D1C4283710065BFB6 /* Parse.framework */; };
 		372ED4401C4283710065BFB6 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372ED43E1C4283710065BFB6 /* ParseFacebookUtils.framework */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		0A144BDF850EC93EA6B3DC36 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		370F25FD1C46138B000B76DA /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		371301A91C31CF9B00A2FA87 /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
 		372ED43D1C4283710065BFB6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		372ED43E1C4283710065BFB6 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
@@ -120,6 +122,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		370F25FC1C461372000B76DA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				370F25FD1C46138B000B76DA /* User.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		372ED43C1C4283280065BFB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				3798FD451C31C28C00EA6266 /* AppDelegate.swift */,
+				370F25FC1C461372000B76DA /* Data */,
 				3798FD681C31C2BE00EA6266 /* Views */,
 				379F43001C3E00B500823E62 /* ViewControllers */,
 				3798FD4C1C31C28C00EA6266 /* Main.storyboard */,
@@ -379,6 +390,7 @@
 				3798FD4B1C31C28C00EA6266 /* ViewController.swift in Sources */,
 				3798FD461C31C28C00EA6266 /* AppDelegate.swift in Sources */,
 				37ED9F091C3E025300A6F3E5 /* CardsViewController.swift in Sources */,
+				370F25FE1C46138B000B76DA /* User.swift in Sources */,
 				3798FD6A1C31C30000EA6266 /* CardView.swift in Sources */,
 				371301AA1C31CF9B00A2FA87 /* SwipeView.swift in Sources */,
 				3798FD491C31C28C00EA6266 /* SwiftTinderClone.xcdatamodeld in Sources */,
