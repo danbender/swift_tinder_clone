@@ -37,6 +37,7 @@ class LoginViewController: UIViewController {
                     let pictureURL = ((r["picture"] as! NSDictionary)["data"] as! NSDictionary)["url"] as! String
                     let url = NSURL(string: pictureURL)
                     let request = NSURLRequest(URL: url!)
+                   
                     NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler: {
                         response, data, error in
                         
