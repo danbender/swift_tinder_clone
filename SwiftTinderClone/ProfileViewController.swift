@@ -16,8 +16,7 @@ class ProfileViewController: UIViewController {
             self.imageView.layer.masksToBounds = true
             self.imageView.contentMode = .ScaleAspectFill
             self.imageView.image = image
-            }
-        )
+        })
     }
 
     override func didReceiveMemoryWarning() {
