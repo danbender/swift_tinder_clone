@@ -39,7 +39,7 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
     }
     
     func goToProfile(button: UIBarButtonItem) {
-    
+        pageController.goToPreviousVC()
     }
 
     override func didReceiveMemoryWarning() {
