@@ -15,6 +15,8 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
     var backCard: Card?
     var frontCard: Card?
     
+    var users: [User]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,6 +29,13 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
         
         frontCard = createCard(frontCardTopMargin)
         cardStackView.addSubview(frontCard!.swipeView)
+        
+        fetchUnviewedUsers({
+            users in
+            self.users = users
+            println(self.users)
+        })
+
     }
     
     override func viewWillAppear(animated: Bool) {
