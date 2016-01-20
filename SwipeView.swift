@@ -12,6 +12,8 @@ class SwipeView: UIView {
     
     let overlay: UIImageView = UIImageView()
     
+    var direction: Direction?
+    
     var innerView: UIView? {
         didSet {
             if let v = innerView {
@@ -61,7 +63,10 @@ class SwipeView: UIView {
             let rotationPercent = min(distance.x/(self.superview!.frame.width/2), 1)
             let rotationAngle = (CGFloat(2*M_PI/16)*rotationPercent)
             transform = CGAffineTransformMakeRotation(rotationAngle)
+            
             center = CGPointMake(originalPoint!.x + distance.x, originalPoint!.y + distance.y)
+            
+            updateOverlay(distance.x)
         case UIGestureRecognizerState.Ended:
             if abs(distance.x) < frame.width/4 {
                 resetViewPositionAndTransformations()
@@ -95,10 +100,27 @@ class SwipeView: UIView {
         })
     }
     
+    private func updateOverlay(distance: CGFloat) {
+        
+        var newDirection: Direction
+        newDirection = distance < 0 ? .Left : .Right
+        
+//        if direction does not equal the current direction
+        if newDirection != direction {
+            direction = newDirection
+            overlay.image = direction == .Right ? UIImage(named: "yeah-stamp") : UIImage(named: "nah-stamp")
+        }
+//        based on distance dragged, adjust alpha so it has a nice transition
+        overlay.alpha = abs(distance) / (superview!.frame.width/2)
+        
+    }
+    
     private func resetViewPositionAndTransformations() {
         UIView.animateWithDuration(0.1, animations: { () -> Void in
             self.center = self.originalPoint!
             self.transform = CGAffineTransformMakeRotation(0)
+            
+            self.overlay.alpha = 0
         })
     }
     
