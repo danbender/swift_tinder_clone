@@ -2,16 +2,21 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    @IBOutlet weak var loginWithFacebookButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        loginWithFacebookButton.layer.cornerRadius = 3
+        loginWithFacebookButton.titleEdgeInsets = UIEdgeInsetsMake(5, 20, 5, 20)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     @IBAction func pressedFBLogin(sender: UIButton) {
         PFFacebookUtils.logInWithPermissions(["public_profile", "user_about_me", "user_birthday"], block: {

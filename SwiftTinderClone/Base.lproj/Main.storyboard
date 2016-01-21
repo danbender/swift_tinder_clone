@@ -183,10 +183,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1u-C9-CKP">
-                                <rect key="frame" x="217" y="285" width="166" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1u-C9-CKP">
+                                <rect key="frame" x="188" y="280" width="225" height="40"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.0" green="0.30945362856750758" blue="0.61928641374747473" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lqw-Up-ZUm"/>
+                                    <constraint firstAttribute="width" constant="225" id="sza-EY-dXR"/>
+                                </constraints>
                                 <state key="normal" title="Login with Facebook">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -203,6 +207,9 @@
                             <constraint firstAttribute="centerY" secondItem="D1u-C9-CKP" secondAttribute="centerY" id="RBz-7S-vT0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginWithFacebookButton" destination="D1u-C9-CKP" id="Jlr-4O-7nr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nph-Bg-7KM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
