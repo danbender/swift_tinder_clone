@@ -38,3 +38,24 @@ func fetchUnviewedUsers(callback: ([User]) -> ()) {
             }
     })
 }
+
+func saveSkip(user: User) {
+    let skip = PFObject(className: "Action")
+    skip.setObject(PFUser.currentUser()!.objectId!, forKey: "byUser")
+    skip.setObject(user.id, forKey: "toUser")
+    skip.setObject("skipped", forKey: "type")
+    skip.saveInBackgroundWithBlock(nil)
+}
+
+func saveLike(user: User) {
+    let like = PFObject(className: "Action")
+    like.setObject(PFUser.currentUser()!.objectId, forKey: "byUser")
+    like.setObject(user.id, forKey: "toUser")
+    like.setObject("liked", forKey: "type")
+    like.saveInBackgroundWithBlock(nil)
+}
+
+
+
+
+

@@ -67,6 +67,7 @@ class SwipeView: UIView {
             center = CGPointMake(originalPoint!.x + distance.x, originalPoint!.y + distance.y)
             
             updateOverlay(distance.x)
+            
         case UIGestureRecognizerState.Ended:
             if abs(distance.x) < frame.width/4 {
                 resetViewPositionAndTransformations()
