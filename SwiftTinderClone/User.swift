@@ -49,7 +49,7 @@ func saveSkip(user: User) {
 
 func saveLike(user: User) {
     let like = PFObject(className: "Action")
-    like.setObject(PFUser.currentUser()!.objectId, forKey: "byUser")
+    like.setObject(PFUser.currentUser()!.objectId!, forKey: "byUser")
     like.setObject(user.id, forKey: "toUser")
     like.setObject("liked", forKey: "type")
     like.saveInBackgroundWithBlock(nil)
