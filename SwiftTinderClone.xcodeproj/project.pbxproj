@@ -23,7 +23,9 @@
 		372ED4521C4283EF0065BFB6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372ED4511C4283EF0065BFB6 /* SystemConfiguration.framework */; };
 		372ED4541C4283F70065BFB6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 372ED4531C4283F70065BFB6 /* libz.dylib */; };
 		372ED4561C4283FF0065BFB6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 372ED4551C4283FF0065BFB6 /* libsqlite3.dylib */; };
+		375C51C21C50E30B004D874A /* MatchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375C51C11C50E30B004D874A /* MatchesTableViewController.swift */; };
 		376313901C43778800A47D5E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3763138F1C43778800A47D5E /* LoginViewController.swift */; };
+		377708011C50E42F007BEECD /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377708001C50E42F007BEECD /* UserCell.swift */; };
 		3798FD461C31C28C00EA6266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3798FD451C31C28C00EA6266 /* AppDelegate.swift */; };
 		3798FD491C31C28C00EA6266 /* SwiftTinderClone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3798FD471C31C28C00EA6266 /* SwiftTinderClone.xcdatamodeld */; };
 		3798FD4B1C31C28C00EA6266 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3798FD4A1C31C28C00EA6266 /* ViewController.swift */; };
@@ -65,7 +67,9 @@
 		372ED4531C4283F70065BFB6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		372ED4551C4283FF0065BFB6 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		372ED4571C4287A90065BFB6 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		375C51C11C50E30B004D874A /* MatchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesTableViewController.swift; sourceTree = "<group>"; };
 		3763138F1C43778800A47D5E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		377708001C50E42F007BEECD /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserCell.swift; path = SwiftTinderClone/UserCell.swift; sourceTree = "<group>"; };
 		3798FD401C31C28C00EA6266 /* SwiftTinderClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTinderClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3798FD441C31C28C00EA6266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3798FD451C31C28C00EA6266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -221,6 +225,7 @@
 			children = (
 				3798FD691C31C30000EA6266 /* CardView.swift */,
 				371301A91C31CF9B00A2FA87 /* SwipeView.swift */,
+				377708001C50E42F007BEECD /* UserCell.swift */,
 			);
 			name = Views;
 			path = ..;
@@ -233,6 +238,7 @@
 				3763138F1C43778800A47D5E /* LoginViewController.swift */,
 				37ED9F081C3E025300A6F3E5 /* CardsViewController.swift */,
 				370F25FF1C4618B3000B76DA /* ProfileViewController.swift */,
+				375C51C11C50E30B004D874A /* MatchesTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -393,10 +399,12 @@
 				3798FD4B1C31C28C00EA6266 /* ViewController.swift in Sources */,
 				3798FD461C31C28C00EA6266 /* AppDelegate.swift in Sources */,
 				37ED9F091C3E025300A6F3E5 /* CardsViewController.swift in Sources */,
+				375C51C21C50E30B004D874A /* MatchesTableViewController.swift in Sources */,
 				370F25FE1C46138B000B76DA /* User.swift in Sources */,
 				3798FD6A1C31C30000EA6266 /* CardView.swift in Sources */,
 				370F26001C4618B3000B76DA /* ProfileViewController.swift in Sources */,
 				371301AA1C31CF9B00A2FA87 /* SwipeView.swift in Sources */,
+				377708011C50E42F007BEECD /* UserCell.swift in Sources */,
 				3798FD491C31C28C00EA6266 /* SwiftTinderClone.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -124,6 +124,53 @@
             </objects>
             <point key="canvasLocation" x="1146" y="1775"/>
         </scene>
+        <!--Root View Controller-->
+        <scene sceneID="PFK-qm-r55">
+            <objects>
+                <tableViewController id="Rmv-MK-kaP" customClass="MatchesTableViewController" customModule="SwiftTinderClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="2x4-Fk-bE6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="pdy-PA-DMJ" customClass="UserCell" customModule="SwiftTinderClone" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pdy-PA-DMJ" id="cy2-2r-oCG">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Rmv-MK-kaP" id="78s-Ei-1HD"/>
+                            <outlet property="delegate" destination="Rmv-MK-kaP" id="SnV-vd-OW3"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="ObE-Dv-5nQ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O7G-1Z-ESq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1146" y="2468"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="w3e-N2-Aqi">
+            <objects>
+                <navigationController id="CXA-nr-7C5" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cke-Eq-y9q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Rmv-MK-kaP" kind="relationship" relationship="rootViewController" id="2lw-CO-0a8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ihq-dj-DH9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="432" y="2468"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="ncy-EY-y7N">
             <objects>
