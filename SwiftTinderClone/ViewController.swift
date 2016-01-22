@@ -53,11 +53,9 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource {
        
         switch viewController {
         case cardsVC:
-            return nil        
+            return matchesVC
         case profileVC:
             return cardsVC
-        case cardsVC:
-            return matchesVC
         default:
             return nil
         }
