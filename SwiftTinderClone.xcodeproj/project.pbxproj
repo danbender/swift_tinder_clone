@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37068AAF1C5222BB001F534A /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37068AAE1C5222BB001F534A /* Match.swift */; };
 		370F25FE1C46138B000B76DA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370F25FD1C46138B000B76DA /* User.swift */; };
 		370F26001C4618B3000B76DA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370F25FF1C4618B3000B76DA /* ProfileViewController.swift */; };
 		371301AA1C31CF9B00A2FA87 /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371301A91C31CF9B00A2FA87 /* SwipeView.swift */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		0A144BDF850EC93EA6B3DC36 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		37068AAE1C5222BB001F534A /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		370F25FD1C46138B000B76DA /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		370F25FF1C4618B3000B76DA /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		371301A91C31CF9B00A2FA87 /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				370F25FD1C46138B000B76DA /* User.swift */,
+				37068AAE1C5222BB001F534A /* Match.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				371301AA1C31CF9B00A2FA87 /* SwipeView.swift in Sources */,
 				377708011C50E42F007BEECD /* UserCell.swift in Sources */,
 				3798FD491C31C28C00EA6266 /* SwiftTinderClone.xcdatamodeld in Sources */,
+				37068AAF1C5222BB001F534A /* Match.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
