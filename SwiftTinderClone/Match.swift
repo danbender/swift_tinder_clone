@@ -17,6 +17,28 @@ func fetchMatches (callBack: ([Match]) -> ()) {
                     (object.objectId!, object.objectForKey("toUser") as! String)
                 })
                 let userIDs = matchedUsers.map({$0.userID})
+                
+                PFUser.query()!
+                    .whereKey("objectId", containedIn: userIDs)
+                    //        .orderByAscending("objectId")
+                    .findObjectsInBackgroundWithBlock({
+                        objects, error in
+                        if let users = objects as? [PFUser] {
+                            var users = reverse(users)
+                            
+                            //          Same as initializing array with var m:[Match] = []
+                            var m = Array<Match>()
+                            
+                            for (index, user) in enumerate(users) {
+                                m.append(Match(id: matchedUsers[index].matchID, user: pfUserToUser(user)))
+                            }
+                            callBack(m)
+                        }
+                    })
             }
-        })
+})
+
+
 }
+
+
