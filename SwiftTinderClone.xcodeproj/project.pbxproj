@@ -10,6 +10,7 @@
 		37068AAF1C5222BB001F534A /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37068AAE1C5222BB001F534A /* Match.swift */; };
 		370F25FE1C46138B000B76DA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370F25FD1C46138B000B76DA /* User.swift */; };
 		370F26001C4618B3000B76DA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370F25FF1C4618B3000B76DA /* ProfileViewController.swift */; };
+		370FD6901C54049C002458E0 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FD68F1C54049C002458E0 /* ChatViewController.swift */; };
 		371301AA1C31CF9B00A2FA87 /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371301A91C31CF9B00A2FA87 /* SwipeView.swift */; };
 		372ED43F1C4283710065BFB6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372ED43D1C4283710065BFB6 /* Parse.framework */; };
 		372ED4401C4283710065BFB6 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372ED43E1C4283710065BFB6 /* ParseFacebookUtils.framework */; };
@@ -54,6 +55,7 @@
 		37068AAE1C5222BB001F534A /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		370F25FD1C46138B000B76DA /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		370F25FF1C4618B3000B76DA /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		370FD68F1C54049C002458E0 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		371301A91C31CF9B00A2FA87 /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
 		372ED43D1C4283710065BFB6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		372ED43E1C4283710065BFB6 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 				37ED9F081C3E025300A6F3E5 /* CardsViewController.swift */,
 				370F25FF1C4618B3000B76DA /* ProfileViewController.swift */,
 				375C51C11C50E30B004D874A /* MatchesTableViewController.swift */,
+				370FD68F1C54049C002458E0 /* ChatViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				3798FD6A1C31C30000EA6266 /* CardView.swift in Sources */,
 				370F26001C4618B3000B76DA /* ProfileViewController.swift in Sources */,
 				371301AA1C31CF9B00A2FA87 /* SwipeView.swift in Sources */,
+				370FD6901C54049C002458E0 /* ChatViewController.swift in Sources */,
 				377708011C50E42F007BEECD /* UserCell.swift in Sources */,
 				3798FD491C31C28C00EA6266 /* SwiftTinderClone.xcdatamodeld in Sources */,
 				37068AAF1C5222BB001F534A /* Match.swift in Sources */,
