@@ -25,6 +25,8 @@
 		372ED4521C4283EF0065BFB6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372ED4511C4283EF0065BFB6 /* SystemConfiguration.framework */; };
 		372ED4541C4283F70065BFB6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 372ED4531C4283F70065BFB6 /* libz.dylib */; };
 		372ED4561C4283FF0065BFB6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 372ED4551C4283FF0065BFB6 /* libsqlite3.dylib */; };
+		3752078C1C55EE9100ED0818 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3752078B1C55EE9100ED0818 /* libicucore.dylib */; };
+		3752078E1C55EEBD00ED0818 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3752078D1C55EEBD00ED0818 /* libc++.dylib */; };
 		375C51C21C50E30B004D874A /* MatchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375C51C11C50E30B004D874A /* MatchesTableViewController.swift */; };
 		376313901C43778800A47D5E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3763138F1C43778800A47D5E /* LoginViewController.swift */; };
 		377708011C50E42F007BEECD /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377708001C50E42F007BEECD /* UserCell.swift */; };
@@ -71,6 +73,8 @@
 		372ED4531C4283F70065BFB6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		372ED4551C4283FF0065BFB6 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		372ED4571C4287A90065BFB6 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		3752078B1C55EE9100ED0818 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		3752078D1C55EEBD00ED0818 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		375C51C11C50E30B004D874A /* MatchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesTableViewController.swift; sourceTree = "<group>"; };
 		3763138F1C43778800A47D5E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		377708001C50E42F007BEECD /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserCell.swift; path = SwiftTinderClone/UserCell.swift; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3752078E1C55EEBD00ED0818 /* libc++.dylib in Frameworks */,
+				3752078C1C55EE9100ED0818 /* libicucore.dylib in Frameworks */,
 				372ED4561C4283FF0065BFB6 /* libsqlite3.dylib in Frameworks */,
 				372ED4541C4283F70065BFB6 /* libz.dylib in Frameworks */,
 				372ED4521C4283EF0065BFB6 /* SystemConfiguration.framework in Frameworks */,
@@ -144,6 +150,8 @@
 		372ED43C1C4283280065BFB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3752078D1C55EEBD00ED0818 /* libc++.dylib */,
+				3752078B1C55EE9100ED0818 /* libicucore.dylib */,
 				372ED4551C4283FF0065BFB6 /* libsqlite3.dylib */,
 				372ED4531C4283F70065BFB6 /* libz.dylib */,
 				372ED4511C4283EF0065BFB6 /* SystemConfiguration.framework */,
