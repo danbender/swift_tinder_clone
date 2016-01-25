@@ -3,6 +3,9 @@ import Foundation
 class ChatViewController: JSQMessagesViewController {
     
     var messages: [JSQMessage] = []
+    let outgoingBubble = JSQMessagesBubbleImageFactory().outgoingMessagesBubbleImageWithColor(UIColor.jsq_messageBubbleBlueColor())
+    let incomingBubble = JSQMessagesBubbleImageFactory().incomingMessagesBubbleImageWithColor(UIColor.jsq_messageBubbleLightGrayColor())
+
     
     override var senderId: String! {
         get {
@@ -44,6 +47,22 @@ class ChatViewController: JSQMessagesViewController {
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return messages.count
+    }
+    
+    override func collectionView(collectionView: JSQMessagesCollectionView!, messageBubbleImageDataForItemAtIndexPath indexPath: NSIndexPath!) -> JSQMessageBubbleImageDataSource! {
+        var data = self.messages[indexPath.row]
+        if data.senderId == PFUser.currentUser()!.objectId {
+            return outgoingBubble
+        }
+        else {
+            return incomingBubble
+        }
+    }
+    
+    override func didPressSendButton(button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: NSDate!) {
+        let m = JSQMessage(senderId: senderId, senderDisplayName: senderDisplayName, date: date, text: text)
+        self.messages.append(m)
+        finishSendingMessage()
     }
     
     
