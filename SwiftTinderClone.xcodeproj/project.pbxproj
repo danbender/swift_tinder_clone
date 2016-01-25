@@ -27,6 +27,7 @@
 		372ED4561C4283FF0065BFB6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 372ED4551C4283FF0065BFB6 /* libsqlite3.dylib */; };
 		3752078C1C55EE9100ED0818 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3752078B1C55EE9100ED0818 /* libicucore.dylib */; };
 		3752078E1C55EEBD00ED0818 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3752078D1C55EEBD00ED0818 /* libc++.dylib */; };
+		375207901C55EF4800ED0818 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3752078F1C55EF4800ED0818 /* Message.swift */; };
 		375C51C21C50E30B004D874A /* MatchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375C51C11C50E30B004D874A /* MatchesTableViewController.swift */; };
 		376313901C43778800A47D5E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3763138F1C43778800A47D5E /* LoginViewController.swift */; };
 		377708011C50E42F007BEECD /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377708001C50E42F007BEECD /* UserCell.swift */; };
@@ -75,6 +76,7 @@
 		372ED4571C4287A90065BFB6 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		3752078B1C55EE9100ED0818 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		3752078D1C55EEBD00ED0818 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		3752078F1C55EF4800ED0818 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		375C51C11C50E30B004D874A /* MatchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesTableViewController.swift; sourceTree = "<group>"; };
 		3763138F1C43778800A47D5E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		377708001C50E42F007BEECD /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserCell.swift; path = SwiftTinderClone/UserCell.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			children = (
 				370F25FD1C46138B000B76DA /* User.swift */,
 				37068AAE1C5222BB001F534A /* Match.swift */,
+				3752078F1C55EF4800ED0818 /* Message.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				377708011C50E42F007BEECD /* UserCell.swift in Sources */,
 				3798FD491C31C28C00EA6266 /* SwiftTinderClone.xcdatamodeld in Sources */,
 				37068AAF1C5222BB001F534A /* Match.swift in Sources */,
+				375207901C55EF4800ED0818 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
