@@ -7,17 +7,20 @@ PODS:
   - Bolts/Tasks (1.5.1)
   - Facebook-iOS-SDK (3.24.1):
     - Bolts (~> 1.2)
+  - Firebase (2.2.2)
   - JSQMessagesViewController (7.2.0):
     - JSQSystemSoundPlayer (~> 2.0.1)
   - JSQSystemSoundPlayer (2.0.1)
 
 DEPENDENCIES:
   - Facebook-iOS-SDK (~> 3.23)
+  - Firebase (~> 2.2.0)
   - JSQMessagesViewController (~> 7.0)
 
 SPEC CHECKSUMS:
   Bolts: a12663244b1d3351c738882e71902fc74db54f64
   Facebook-iOS-SDK: 08689c2690dc4e087b9c8e171e48667608b72a2a
+  Firebase: e35cdd2561bf4fea9c1e384e9400a9c173d19e47
   JSQMessagesViewController: 73cab48aa92fc2d512f3b6724f3425cc47a19eb5
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
 
