@@ -3,6 +3,9 @@ import Foundation
 class ChatViewController: JSQMessagesViewController {
     
     var messages: [JSQMessage] = []
+    
+    var matchID: String?
+    
     let outgoingBubble = JSQMessagesBubbleImageFactory().outgoingMessagesBubbleImageWithColor(UIColor.jsq_messageBubbleBlueColor())
     let incomingBubble = JSQMessagesBubbleImageFactory().incomingMessagesBubbleImageWithColor(UIColor.jsq_messageBubbleLightGrayColor())
 
@@ -66,6 +69,11 @@ class ChatViewController: JSQMessagesViewController {
     override func didPressSendButton(button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: NSDate!) {
         let m = JSQMessage(senderId: senderId, senderDisplayName: senderDisplayName, date: date, text: text)
         self.messages.append(m)
+        
+        if let id = matchID {
+            saveMessage(id, Message(message: text, senderID: senderId, date: date))
+        }
+        
         finishSendingMessage()
     }
     
