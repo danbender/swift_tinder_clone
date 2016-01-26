@@ -36,9 +36,20 @@ class ChatViewController: JSQMessagesViewController {
 //       TODO: need to investigate bug in library so I can show avatars when chatting. 
         collectionView.collectionViewLayout.incomingAvatarViewSize = CGSizeZero
         collectionView.collectionViewLayout.outgoingAvatarViewSize = CGSizeZero
+        
+        if let id = matchID {
+            fetchMessages(id, {
+                messages in
+                for m in messages {
+                    self.messages.append(JSQMessage(senderId: m.senderID, senderDisplayName: m.senderID, date: m.date, text: m.message))
+                }
+                self.finishReceivingMessage()
+            })
+        }
+
 
     }
-//    
+   
 //    func senderDisplayName() -> String! {
 //        return currentUser()!.id
 //    }
