@@ -6,6 +6,8 @@ class ChatViewController: JSQMessagesViewController {
     
     var matchID: String?
     
+    var messageListener: MessageListener?
+    
     let outgoingBubble = JSQMessagesBubbleImageFactory().outgoingMessagesBubbleImageWithColor(UIColor.jsq_messageBubbleBlueColor())
     let incomingBubble = JSQMessagesBubbleImageFactory().incomingMessagesBubbleImageWithColor(UIColor.jsq_messageBubbleLightGrayColor())
 
@@ -46,17 +48,21 @@ class ChatViewController: JSQMessagesViewController {
                 self.finishReceivingMessage()
             })
         }
-
-
     }
-   
-//    func senderDisplayName() -> String! {
-//        return currentUser()!.id
-//    }
-//    
-//    func senderId() -> String! {
-//        return currentUser()!.id
-//    }
+    
+    override func viewWillAppear(animated: Bool) {
+        if let id = matchID {
+            messageListener = MessageListener(matchID: id, startDate: NSDate(), callback: {
+                message in
+                self.messages.append(JSQMessage(senderId: message.senderID, senderDisplayName: message.senderID, date: message.date, text: message.message))
+                self.finishReceivingMessage()
+            })
+        }
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        messageListener?.stop()
+    }
     
     override func collectionView(collectionView: JSQMessagesCollectionView!, messageDataForItemAtIndexPath indexPath: NSIndexPath!) -> JSQMessageData! {
         var data = self.messages[indexPath.row]
